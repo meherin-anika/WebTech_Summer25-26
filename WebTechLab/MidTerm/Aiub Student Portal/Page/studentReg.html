@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIUB Student Portal</title>
+    <link rel="stylesheet" href="../Design/design.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>AIUB Student Portal</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Student Registration</a>
+    </div>
+
+    <div class="container">
+        <h2>User Registration Form</h2>
+        <form>
+            <fieldset>
+                <legend>Student Information</legend>
+                <table>
+                    <tr>
+                        <td><label for="name">Full Name</label></td>
+                        <td>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="studentid">Student ID</label></td>
+                        <td>
+                            <input type="text" id="studentid" name="studentid" placeholder="Enter Student ID">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td>
+                            <input type="email" id="email" name="email" placeholder="Enter Email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number</label></td>
+                        <td>
+                            <input type="text" id="phone" name="phone" placeholder="Enter Phone Number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth</label></td>
+                        <td>
+                            <input type="date" id="dob" name="dob">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="department">Department</label></td>
+                        <td>
+                            <select id="department" name="department">
+                                <option value="">Select Department</option>
+                                <option value="CSE">CSE</option>
+                                <option value="EEE">EEE</option>
+                                <option value="BBA">BBA</option>
+                                <option value="Architecture">Architecture</option>
+                                <option value="English">English</option>
+                                <option value="Pharmacy">Pharmacy</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="semester">Semester</label></td>
+                        <td>
+                            <input type="text" id="semester" name="semester" placeholder="Enter your semester">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="blood">Blood Group</label></td>
+                        <td>
+                            <select id="blood" name="blood">
+                                <option value="">Select Blood Group</option>
+                                <option>A+</option>
+                                <option>A-</option>
+                                <option>B+</option>
+                                <option>B-</option>
+                                <option>AB+</option>
+                                <option>AB-</option>
+                                <option>O+</option>
+                                <option>O-</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address</label></td>
+                        <td>
+                            <textarea id="address" name="address" rows="4" cols="30" placeholder="Enter your address"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="photo">Upload Photo</label></td>
+                        <td>
+                            <input type="file" id="photo" name="photo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td>
+                            <input type="password" id="password" name="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="confirm">Confirm Password</label></td>
+                        <td>
+                            <input type="password" id="confirm" name="confirm">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="skills">Skills</label></td>
+                        <td>
+                            <input type="text" id="skills" name="skills" placeholder="Example: HTML, CSS, Java, Python">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" id="agree">
+                            <label for="agree">I Agree to the Terms & Conditions</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Register">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 AIUB Student Portal | All Rights Reserved</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#ffffff;
+    color:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+.profile-container{
+    position:relative;
+    width:100%;
+    max-width:900px;
+    background:#ffffff;
+    border:2px solid #ff4081;
+    border-radius:12px;
+    padding:70px 40px 40px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.profile-badge{
+    position:absolute;
+    top:-18px;
+    left:25px;
+    background:#ff4081;
+    color:#ffffff;
+    padding:8px 22px;
+    font-size:17px;
+    font-weight:600;
+    border-radius:8px;
+}
+
+.profile-header{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.profile-header img{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    border:4px solid #ff4081;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.profile-header h2{
+    font-size:30px;
+    color:#000;
+    margin-bottom:5px;
+}
+
+.profile-header p{
+    color:#555;
+    font-size:16px;
+}
+
+.info-row{
+    display:flex;
+    gap:25px;
+    margin-bottom:18px;
+}
+
+.info-label{
+    width:30%;
+    font-weight:600;
+    color:#000;
+    padding:12px 15px;
+    border:1px solid #ff4081;
+    border-radius:6px;
+    background:#ffffff;
+}
+
+.info-value{
+    flex:1;
+    padding:12px 15px;
+    border:1px solid #ff4081;
+    border-radius:6px;
+    background:#ffffff;
+    color:#000;
+}
+
+.info-value a{
+    color:#000;
+    text-decoration:none;
+}
+
+.info-value a:hover{
+    color:#ff4081;
+}
+
+.social-buttons{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    margin-top:35px;
+}
+
+.social-buttons a{
+    text-decoration:none;
+    background:#ff4081;
+    color:#ffffff;
+    padding:12px 28px;
+    border-radius:6px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.social-buttons a:hover{
+    background:#e91e63;
+}
+
+@media(max-width:768px){
+
+    .profile-container{
+        padding:60px 20px 30px;
+    }
+
+    .info-row{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .info-label{
+        width:100%;
+    }
+
+    .social-buttons{
+        flex-direction:column;
+    }
+
+    .social-buttons a{
+        text-align:center;
+    }
+
+    .profile-header img{
+        width:140px;
+        height:140px;
+    }
+
+    .profile-header h2{
+        font-size:24px;
+    }
+}

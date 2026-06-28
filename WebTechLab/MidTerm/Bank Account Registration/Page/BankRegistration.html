@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladesh National Bank - Account Registration</title>
+
+    <link rel="stylesheet" href="../Design/design.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <div class="header">
+        <h1>🏦 Bangladesh National Bank</h1>
+        <p>Your Trust, Our Priority</p>
+    </div>
+
+    <!-- Navigation -->
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Open Account</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Registration Form -->
+
+    <div class="container">
+
+        <h2>Bank Account Registration Form</h2>
+
+        <form>
+
+            <!-- Personal Information -->
+
+            <fieldset>
+
+                <legend>Personal Information</legend>
+
+                <table>
+
+                    <tr>
+                        <td><label for="fullname">Full Name</label></td>
+                        <td>
+                            <input type="text" id="fullname" placeholder="Enter your full name">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="father">Father's Name</label></td>
+                        <td>
+                            <input type="text" id="father" placeholder="Enter father's name">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="mother">Mother's Name</label></td>
+                        <td>
+                            <input type="text" id="mother" placeholder="Enter mother's name">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="phone">Phone Number</label></td>
+                        <td>
+                            <input type="text" id="phone" placeholder="01XXXXXXXXX">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">Email Address</label></td>
+                        <td>
+                            <input type="email" id="email" placeholder="example@gmail.com">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="dob">Date of Birth</label></td>
+                        <td>
+                            <input type="date" id="dob">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td>
+                            <input type="radio" name="gender"> Male
+                            &nbsp;&nbsp;
+                            <input type="radio" name="gender"> Female
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="nid">National ID</label></td>
+                        <td>
+                            <input type="text" id="nid" placeholder="Enter National ID">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="occupation">Occupation</label></td>
+                        <td>
+                            <input type="text" id="occupation" placeholder="Enter your occupation">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="address">Address</label></td>
+                        <td>
+                            <textarea id="address" rows="4" placeholder="Enter your address"></textarea>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </fieldset>
+
+            <!-- Account Information -->
+
+            <fieldset>
+
+                <legend>Account Information</legend>
+
+                <table>
+
+                    <tr>
+                        <td><label for="type">Account Type</label></td>
+                        <td>
+                            <select id="type">
+                                <option>Select Account Type</option>
+                                <option>Savings Account</option>
+                                <option>Current Account</option>
+                                <option>Student Account</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="branch">Preferred Branch</label></td>
+                        <td>
+                            <input type="text" id="branch" placeholder="Enter branch name">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="deposit">Initial Deposit</label></td>
+                        <td>
+                            <input type="text" id="deposit" placeholder="Enter deposit amount">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="username">Username</label></td>
+                        <td>
+                            <input type="text" id="username" placeholder="Choose a username">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td>
+                            <input type="password" id="password" placeholder="Enter password">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="confirm">Confirm Password</label></td>
+                        <td>
+                            <input type="password" id="confirm" placeholder="Re-enter password">
+                        </td>
+                    </tr>
+
+                </table>
+
+            </fieldset>
+
+            <!-- Terms -->
+
+            <div class="terms">
+
+                <input type="checkbox" id="agree">
+
+                <label for="agree">
+                    I agree to the Terms and Conditions of Bangladesh National Bank.
+                </label>
+
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="buttons">
+
+                <input type="submit" value="Register">
+
+                <input type="reset" value="Clear Form">
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        © 2026 Bangladesh National Bank | All Rights Reserved
+    </div>
+
+</body>
+
+</html>

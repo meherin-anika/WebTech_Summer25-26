@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff0f3; /* Changed from #ffffff to soft light pink */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.form-container {
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    border: 2px solid #ff4081;
+    border-radius: 12px;
+    padding: 50px 30px 10px 30px;
+    background-color: #fff0f3; /* Changed from #ffffff to match the background */
+    margin-bottom: 25px;
+}
+
+.form-badge {
+    position: absolute;
+    top: -18px;
+    left: 25px;
+    background-color: #ff4081;
+    color: #ffffff;
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.form-row {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 25px;
+}
+
+.form-row > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5268;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333333;
+    outline: none;
+    background-color: #ffffff; /* Keeping the input fields white for contrast */
+}
+
+input::placeholder {
+    color: #adb5bd;
+}
+
+input:focus {
+    border-color: #ff4081;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 850px;
+}
+
+.btn {
+    width: 200px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.btn-submit {
+    background-color: #ff4081;
+    color: #ffffff;
+}
+
+.btn-clear {
+    background-color: #e2e2e2;
+    color: #4a5268;
+}
+
+@media (max-width: 650px) {
+    .form-row {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        width: 100%;
+    }
+}
